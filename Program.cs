@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CCCCC2;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,7 +9,7 @@ namespace Class_c_sharp
     {
         static void Main(string[] args) 
         {
-            
+            /*
             Inimene[] inimesed = new Inimene[1];
             for (int i = 0; i < 1; i++)
             {
@@ -24,7 +25,7 @@ namespace Class_c_sharp
             }
             
             Inimene mees = new Inimene();
-            
+            /*
             mees.Eesnimi = "Mati";
             mees.Perekonanimi = "Munamagi";
             
@@ -32,18 +33,19 @@ namespace Class_c_sharp
             mees.Vanus = int.Parse(Console.ReadLine());
             mees.Tervetame();
 
-
+            /*
             Inimene naine = new Inimene("Marina",18,Emakeel.eesti);
             naine.Tervetame();
-
+                 
             
-            
-                /*
             naine.Palk = 1000;
             double minutulu = naine.Tulumaks();
             Console.WriteLine("Muni Tulumaks on " + minutulu);
             */
 
+            Opilane Men = new Opilane("Eduart", "Verenavskiy", "TARpv21");
+            Men.Hinne = 3;
+            Men.Info();
 
             Console.ReadLine();
         }

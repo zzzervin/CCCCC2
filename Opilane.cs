@@ -27,7 +27,7 @@ namespace CCCCC2
         public double Hinne
         {
             set
-            {  if (value > 1 && value < 5) hinne = value;}
+            {  if ( value > 1 && value < 5) hinne = value;}
             get { return hinne; }
         }
 
@@ -50,19 +50,20 @@ namespace CCCCC2
         public void Info()
         {
             string t = "";
-            Console.WriteLine($"Minu nimi on {Eesnimi},{Perekonanimi} ");
+            Console.WriteLine($"Minu nimi on {Eesnimi},{Perekonanimi} ja minu ruhm {Ruhm}");
             if (Toestus == true)
             {
                 t = "Saan toetust";
             }
-            else if (Toestus == false)
+            else if (Toestus == false && hinne>0)
             {
-                t = "Saan toetust";
+                t = "Saan ei toetust";
             }
             else
             {
-                t = "Saan toetust";
+                t = "mitte veel";
             }
+            Console.WriteLine($" {t}");
         }
         
     }
