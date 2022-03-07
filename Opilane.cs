@@ -12,9 +12,10 @@ namespace CCCCC2
         double hinne;
         bool toetus;
 
+
         public Opilane() { }
 
-        public Opilane(string Eesnimi, string Perekonanimi, string Ruhm) : base(Eesnimi, Perekonanimi)
+        public Opilane(string Eesnimi, string Perekonanimi, int Vanus, string Ruhm) : base(Eesnimi, Perekonanimi, Vanus)
         {
             ruhm = Ruhm;
         }
@@ -50,7 +51,7 @@ namespace CCCCC2
         public void Info()
         {
             string t = "";
-            Console.WriteLine($"Minu nimi on {Eesnimi},{Perekonanimi} ja minu ruhm {Ruhm}");
+            Console.WriteLine($"Minu nimi on {Eesnimi},{Perekonanimi}minu olen {Vanus} astat vana ja minu ruhm {Ruhm}");
             if (Toestus == true)
             {
                 t = "Saan toetust";
@@ -64,6 +65,7 @@ namespace CCCCC2
                 t = "mitte veel";
             }
             Console.WriteLine($" {t}");
+
         }
         
     }

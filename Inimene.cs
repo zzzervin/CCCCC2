@@ -25,7 +25,7 @@ namespace Class_c_sharp
             vanus = Vanus;
         }
 
-        public Inimene(string eesnimi, string perekonanimi)
+        public Inimene(string eesnimi, string perekonanimi, int vanus)
         {
             this.eesnimi = eesnimi;
             this.perekonanimi = perekonanimi;

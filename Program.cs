@@ -23,14 +23,14 @@ namespace Class_c_sharp
             {
                 inimene.Tervetame();
             }
-            
+            */
             Inimene mees = new Inimene();
-            /*
+            
             mees.Eesnimi = "Mati";
             mees.Perekonanimi = "Munamagi";
             
             Console.WriteLine($"Ma olen {mees.Eesnimi} {mees.Perekonanimi} ma emakeel .Kui vana ma olen");
-            mees.Vanus = int.Parse(Console.ReadLine());
+            mees.Vanus = 18;
             mees.Tervetame();
 
             /*
@@ -43,7 +43,8 @@ namespace Class_c_sharp
             Console.WriteLine("Muni Tulumaks on " + minutulu);
             */
 
-            Opilane Men = new Opilane("Eduart", "Verenavskiy", "TARpv21");
+            Opilane Men = new Opilane("Eduart", "Verenavskiy", 18, "TARpv21");
+            
             Men.Hinne = 3;
             Men.Info();
 
