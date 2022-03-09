@@ -9,6 +9,17 @@ namespace Class_c_sharp
     {
         static void Main(string[] args) 
         {
+            Inimene[] inim = new Inimene[4];
+
+            inim[0] = new Opetaja();
+            inim[0].KAS_ma_olen();
+            inim[1] = new Opilane();
+            inim[1].KAS_ma_olen();
+            inim[2] = new Opilane();
+            inim[2].KAS_ma_olen();
+            inim[3] = new Opilane();
+            inim[3].KAS_ma_olen();
+
             /*
             Inimene[] inimesed = new Inimene[1];
             for (int i = 0; i < 1; i++)
@@ -23,7 +34,7 @@ namespace Class_c_sharp
             {
                 inimene.Tervetame();
             }
-            */
+            
             Inimene mees = new Inimene();
             
             mees.Eesnimi = "Mati";
@@ -47,6 +58,8 @@ namespace Class_c_sharp
             
             Men.Hinne = 3;
             Men.Info();
+
+
 
             Console.ReadLine();
         }

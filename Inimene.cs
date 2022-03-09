@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Class_c_sharp
 {
-    class Inimene
+    public abstract class Inimene
     {
         string eesnimi;//поля
         int vanus;
@@ -92,5 +92,12 @@ namespace Class_c_sharp
 
         }
 
-        }
+        public abstract void KAS_ma_olen();
+
+        public abstract void Vana();
+
+
+
+
+    }
     }

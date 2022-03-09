@@ -66,8 +66,18 @@ namespace CCCCC2
             }
             Console.WriteLine($" {t}");
 
+         
+    }
+
+        public override void KAS_ma_olen()
+        {
+            Console.WriteLine("Ma olen opilane");
         }
-        
+
+        public override void Vana()
+        {
+            throw new NotImplementedException();
+        }
     }
 
     
